@@ -1,0 +1,17 @@
+.navbar{
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.nav-klijenti:hover, .nav-odjava:hover {
+  background-color: #3B434D;
+}
+
+.nav-odjava{
+  justify-self: end;
+}
+
+.nav-link, .navbar-toggler{
+  padding-bottom: 12px;
+  padding-top: 12px;
+}

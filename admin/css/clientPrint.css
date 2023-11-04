@@ -1,0 +1,241 @@
+.print-container{
+  position: relative;
+  padding-top: 25.4mm;
+  padding-bottom: 25.4mm;
+  padding-left: 31.7mm;
+  padding-right: 31.7mm;
+  width: 210mm;
+  height: 297mm;
+  border: 1px solid black;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+
+.print-main-header{
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.print-btn{
+  margin-right: 5%;
+  height: 40px;
+}
+
+.text-user-info{
+  display: block;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.text-info-description{
+  display: inline-block;
+  font-style: italic;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 600;
+  padding-top: 0px;
+}
+
+.border-t{
+  border-top: 1px solid black;
+}
+
+.jmbg-tel-flex{
+  display: flex;
+  flex-direction: row;
+  width: 60%;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.jmbg-tel-description-cells{
+  width: 140px;
+}
+
+
+
+.adresa-mt{
+  margin-top: 20px;
+  width: 170px;
+}
+
+.adresa-description{
+  width: 170px;
+}
+
+.org-name-flex{
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.org-name{
+  width: 37%;
+  text-align: center;
+  font-style: italic;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.zahtjev-header{
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.under-zahtjev-header{
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+.obrazlozenje{
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.text-bold{
+  font-weight: 600;
+}
+
+.text-italics{
+  font-style: italic;
+}
+
+/* .bottom-info {
+  position: absolute;
+  bottom: 25.4mm;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 146.6mm;
+} */
+
+.bottom-info-datum{
+  position: absolute;
+  bottom: 25.4mm;
+  display: flex;
+  flex-direction: row;
+}
+
+.bottom-info-potpis{
+  position: absolute;
+  bottom: 25.4mm;
+  right: 31.7mm;
+  display: flex;
+  flex-direction: column;
+}
+
+#date{
+  padding-left: 7px;
+}
+
+.center-text{
+  text-align: center;
+}
+
+.page-and-info-flex{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 25px
+}
+
+.user-info-box{
+  margin-left: 5%;
+}
+.user-info-box2{
+}
+
+.user-info-table-flex{
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+}
+
+.user-info-row{
+  display: flex;
+  flex-direction: row;
+}
+
+.user-info-first-column{
+  width: 170px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: center;
+}
+
+.user-info-second-column{
+  width: 260px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: center;
+}
+
+.user-info-row {
+  background-color: #f2f2f2;
+}
+
+.user-info-row:nth-child(even) {
+  background-color: #fbfbfb;
+}
+
+.user-info-row-obrazlozenje{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 430px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 25px;
+}
+
+.user-info-obrazlozenje-header{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 1200px){
+  .print-container{
+    display: none;
+  }
+  .page-and-info-flex{
+    flex-direction: column;
+  }
+  .print-btn{
+    margin-right: 0;
+    margin-bottom: 25px;
+  }
+  .user-info-box{
+    margin-left: 0;
+  }
+  .user-info-row-obrazlozenje{
+    width: 100%;
+  }
+}
+
+@media print {
+  body * {
+    /* display: none !important; */
+    visibility: hidden;
+  }
+  .print-container{
+    display: block;
+    border: none !important;
+    margin: 0px;
+    margin-top: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .print-container, .print-container * {
+    /* display: block !important; */
+    visibility: visible;
+  }
+  .border-t{
+    border-top: 1px solid black !important;
+  }
+}

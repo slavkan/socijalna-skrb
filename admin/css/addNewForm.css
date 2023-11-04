@@ -1,0 +1,47 @@
+.create-container{
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: auto;
+}
+
+.add-new-header{
+  margin-top: 25px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.add-new-form{
+  width: 40%;
+  margin: auto;
+}
+
+.obrazlozenje-area{
+  height: 150px;
+  max-height: 400px;
+  resize: vertical;
+  overflow-y: scroll;
+}
+
+.grad-input-flex{
+  display: flex;
+  flex-direction: row;
+}
+
+.grad-input{
+  width: 50%;
+}
+
+.grad-type-input:disabled{
+  cursor: not-allowed;
+}
+
+.grad-select{
+  width: 50%;
+}
+
+@media screen and (max-width: 900px){
+  .add-new-form{
+    width: 90%;
+  }
+}
