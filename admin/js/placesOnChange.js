@@ -74,7 +74,6 @@ zupanije.forEach(zupanija => {
 
 // Disable / enable grad-input
 function updateGradInputDisabled() {
-  console.log(zupanijaSelect.value);
   if (gradSelect.value !== "Upišite grad" || zupanijaSelect.value === "Odaberite županiju") {
     gradInput.disabled = true;
     gradInput.value = "";
@@ -84,6 +83,9 @@ function updateGradInputDisabled() {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-  updateGradInputDisabled();
   gradSelect.addEventListener("change", updateGradInputDisabled);
+  zupanijaSelect.value = "Zapadnohercegovačka županija";
+  popuniGradove();
+  gradSelect.value = "Ljubuški";
+  updateGradInputDisabled();
 });

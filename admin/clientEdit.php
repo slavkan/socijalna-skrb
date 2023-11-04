@@ -82,8 +82,7 @@
     <!-- Zupanije i gradovi -->
     <div class="form-group">
       <label for="zupanija" class="mt-3">Županija</label>
-      <select class="form-select" id="zupanija" name="zupanija" onchange="popuniGradove()">
-      </select>
+      <select class="form-select" id="zupanija" name="zupanija" onchange="popuniGradove()"></select>
     </div>
     <div class="form-group">
       <div class="grad-input-flex">
